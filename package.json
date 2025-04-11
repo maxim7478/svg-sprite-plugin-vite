@@ -12,7 +12,6 @@
     "html",
     "icons"
   ],
-  "author": "Maxim",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -24,11 +23,18 @@
   "homepage": "https://github.com/maxim7478/svg_sprite_plugin_vite#readme",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
-  "types": "./dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "files": ["dist"],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build && tsc",
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
   },

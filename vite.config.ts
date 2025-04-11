@@ -7,17 +7,13 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: './src/index.ts',
-      name: 'SvgSpritePlugin',
-      fileName: (format) => `index.${format}.js`,
+      entry: 'src/index.ts',
+      name: 'SvgSpritePluginVite',
+      formats: ['es', 'umd'],
+      fileName: format => `index.${format}.js`,
     },
     rollupOptions: {
       external: ['vite'],
-      output: {
-        globals: {
-          vite: 'Vite',
-        },
-      },
     },
   },
 })
