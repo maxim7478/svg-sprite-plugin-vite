@@ -15,12 +15,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxim7478/svg_sprite_plugin_vite.git"
+    "url": "https://github.com/maxim7478/svg-sprite-plugin-vite.git"
   },
   "bugs": {
-    "url": "https://github.com/maxim7478/svg_sprite_plugin_vite/issues"
+    "url": "https://github.com/maxim7478/svg-sprite-plugin-vite/issues"
   },
-  "homepage": "https://github.com/maxim7478/svg_sprite_plugin_vite#readme",
+  "homepage": "https://github.com/maxim7478/svg-sprite-plugin-vite#readme",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
   "types": "dist/types/index.d.ts",
