@@ -18,11 +18,11 @@
 Install the plugin via npm:
 
 ```bash
-npm install svg-sprite-plugin-vite --save-dev
+npm install svg-sprite-plugin-vite
 ```
 
 ```bash
-yarn add svg-sprite-plugin-vite --dev
+yarn add svg-sprite-plugin-vite
 ```
 
 1. Configure the Plugin in vite.config.ts
@@ -31,14 +31,14 @@ Add the plugin to your Vite configuration:
 
 ```typescript
 import { defineConfig } from 'vite';
-import svgSpritePlugin from 'svg-sprite-plugin-vite';
+import { svgSpritePlugin } from 'svg-sprite-plugin-vite';
 
 export default defineConfig({
     plugins: [
-        svgSpritePlugin({
-            dir: './src/assets/icons', // Directory containing SVG files
-            xmlns: 'http://www.w3.org/2000/svg', // XML namespace (default)
-        }),
+        svgSpritePlugin( 
+            './src/assets/icons', // Directory containing SVG files
+            'http://www.w3.org/2000/svg', // XML namespace (default)
+        ),
     ],
 });
 ```
