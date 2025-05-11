@@ -1,6 +1,6 @@
 {
   "name": "svg-sprite-plugin-vite",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "type": "module",
   "private": false,
   "description": "A Vite plugin to generate SVG sprites and inject them into your HTML.",
@@ -39,7 +39,10 @@
     "build": "vite build && tsc",
     "preview": "vite preview",
     "prepublishOnly": "npm run build",
-    "publish": "npm publish --access public"
+    "publish-lib": "npm publish --access public"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3"
   },
   "devDependencies": {
     "typescript": "~5.7.2",
