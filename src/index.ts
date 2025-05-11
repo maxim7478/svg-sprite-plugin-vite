@@ -1,1 +1,3 @@
-export { default as svgSpritePlugin } from "./plugins/SvgSpritePlugin/svgSpritePlugin";
+import svgSpritePlugin from "./plugins/SvgSpritePlugin/svgSpritePlugin";
+
+export default svgSpritePlugin

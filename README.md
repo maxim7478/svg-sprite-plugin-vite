@@ -31,7 +31,7 @@ Add the plugin to your Vite configuration:
 
 ```typescript
 import { defineConfig } from 'vite';
-import { svgSpritePlugin } from 'svg-sprite-plugin-vite';
+import svgSpritePlugin from 'svg-sprite-plugin-vite';
 
 export default defineConfig({
     plugins: [

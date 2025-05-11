@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import { svgSpritePlugin } from './src/index'
+import svgSpritePlugin from './src/index'
 
 export default defineConfig({
   plugins: [
