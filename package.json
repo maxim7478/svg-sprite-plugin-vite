@@ -1,6 +1,6 @@
 {
   "name": "svg-sprite-plugin-vite",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "type": "module",
   "private": false,
   "description": "A Vite plugin to generate SVG sprites and inject them into your HTML.",
@@ -24,6 +24,13 @@
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
   "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "files": ["dist"],
   "scripts": {
     "dev": "vite",
