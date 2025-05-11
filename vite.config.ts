@@ -10,10 +10,10 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: 'SvgSpritePluginVite',
       formats: ['es', 'umd'],
-      fileName: format => `svg-sprite-vite.${format}.js`,
+      fileName: format => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['vite'],
+      external: ['vite', 'fs', 'path', 'fast-glob'],
     },
   },
 })
